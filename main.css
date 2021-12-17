@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+.space {
+    background-image: url("https://stepik.org/media/attachments/lesson/452681/space.png");
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.planet-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.planet {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    width: 50%;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+    width: 20%;
+    height: auto;
+    transform: rotate(30deg);
+}
+
+.control-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: repeating-linear-gradient(
+            45deg,
+            yellow,
+            yellow 10px,
+            black 10px,
+            black 20px
+    );
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 30%;
+    height: 35%;
+    text-align: center;
+}
+
+.control-panel__inner {
+    background: #222;
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+}
+
+input[type="password"]{
+    background: #222;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    color: yellow;
+    font-size: 1rem;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+#ok-button{
+    background: #222;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    color: yellow;
+    font-size: 1.1rem;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+.check-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.levers{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+}
+
+.levers input[type="range"] {
+    transform: rotate(-90deg);
+    width: 70px;
+}
+
+#launch-button{
+    background: red;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.7rem;
+    width: 40%;
+    height: 20%;
+}
